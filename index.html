@@ -6,9 +6,10 @@
 </head>
 <body>
 	<input type="text" id="input">
-	<button onclick="sendData()">Send Data</button>
+	<button onclick="sendData()">Send Data</button>{#Sending data from textbox#}
 	<div id="output"></div>
 	<script>
+        //Request method from flask app
 		function sendData() {
 			var value = document.getElementById('input').value;
 			$.ajax({
